@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020024" />
+    <link rel="icon" type="image/png" href="/icons/sea.png" />
+    <link rel="icon" type="image/svg+xml" href="/icons/sea.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Payment Page</title>
+  </head>
+  <body class="payment-page">
+    <nav>
+      <div class="nav-left">
+        <a class="website-name" href="/">Guiding Light Psychic Centre</a>
+        <p>Clarity, Purpose, Connection, Answers</p>
+      </div>
+
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <h1>Complete Your Payment</h1>
+    <p>Thank you for booking! Please choose your payment method below.</p>
+
+    <div class="payment-container">
+      <!-- PayPal Option -->
+      <div class="payment-option">
+        <h2>Pay Online (PayPal)</h2>
+        <p>Click the button below to pay instantly using PayPal.</p>
+        <p>
+          Please note: all readings will be scheduled as soon as full payment is
+          received.
+        </p>
+        <a
+          class="button"
+          href="https://paypal.me/PaulsGuidance/125"
+          target="_blank"
+          >Pay $99</a
+        >
+      </div>
+
+      <!-- Bank Transfer Option -->
+      <div class="payment-option">
+        <h2>Pay via Bank Transfer (EFT)</h2>
+        <p>Use the details below to make a direct bank transfer:</p>
+        <ul id="eft-details">
+          <li>Bank: Capitec</li>
+          <li>Account Name: Guiding Light Psychic Centre</li>
+          <li>Account Number: 2517798865</li>
+          <li>Reference: Your Name + Booking Date. (e.g: JohnDoe-12March)</li>
+        </ul>
+        <button class="eft-payment-button" id="paymentBtn">
+          I have made the payment
+        </button>
+      </div>
+    </div>
+    <div class="proof-of-payment">
+      <h3>Proof of Payment</h3>
+      <p>
+        If you have already paid, please email your proof of payment (attach
+        your receipt manually):
+      </p>
+      <form
+        action="mailto:paul.g.bellion@gmail.com?subject=Payment Proof"
+        method="post"
+        enctype="text/plain"
+      >
+        <button class="submit-pop-button" type="submit">
+          Send proof of payment via email
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>
+      &copy; 2026 Guiding Light Connection. All rights reserved. Website
+      designed and developed by
+      <a href="https://github.com/ChePBCreate" target="_blank"
+        >Che - P. Bellion</a
+      >
+    </p>
+  </footer>
+</html>
